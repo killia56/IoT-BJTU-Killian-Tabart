@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            list of detection
+        </title>
+    </head>
+    <body>
+        <h2>
+            List of movement detected
+        </h2>
+        <div>
+            <p id="datastock"></p>
+            <script type="text/javascript">
+                var dataMovement = '{{ movementData }}';
+                console.log(dataMovement);
+                var lol = dataMovement.replace(/,/g, '<br>');
+                console.log(lol);
+                document.getElementById("datastock").innerHTML = lol;
+            </script>
+        </div>
+    </body>
+</html>
